@@ -1,0 +1,12 @@
+fastlane_version "1.58.0"
+
+default_platform :ios
+
+platform :ios do
+
+  lane :test_framework do
+    scan(
+      skip_slack:true
+    )
+  end
+end
